@@ -1,5 +1,12 @@
+/* index.css */
+body {
+  background-color: #1d1d1d; /* Темный цвет фона */
+  color: white; /* Цвет текста, чтобы текст был виден на темном фоне */
+}
+
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -36,3 +43,15 @@
     transform: rotate(360deg);
   }
 }
+
+.DialogPanel {
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.DialogPanel.open {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
